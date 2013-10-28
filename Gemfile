@@ -14,12 +14,13 @@ gem 'cancan'
 gem 'devise'
 gem 'figaro'
 gem 'haml-rails'
+gem 'pry'
 gem 'rolify'
 gem 'simple_form'
 gem 'unicorn'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'omniauth-saml', :github => 'ruvr/omniauth-saml'
+gem 'omniauth-saml',  '0.9.2'#, :github => 'ruvr/omniauth-saml'
 group :assets do
   gem 'therubyracer', :platform=>:ruby
 end
