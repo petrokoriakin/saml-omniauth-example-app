@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  skip_before_filter  :verify_authenticity_token, :only => [:saml]
 
   rescue_from Exception do |exception|
     redirect_to root_path

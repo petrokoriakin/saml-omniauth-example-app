@@ -14,7 +14,9 @@ gem 'cancan'
 gem 'devise'
 gem 'figaro'
 gem 'haml-rails'
-gem 'pry'
+gem 'pry-rails'
+gem 'pry-stack_explorer'
+gem 'pry-debugger'
 gem 'rolify'
 gem 'simple_form'
 gem 'unicorn'
@@ -25,7 +27,7 @@ group :assets do
   gem 'therubyracer', :platform=>:ruby
 end
 group :development do
-  gem 'better_errors'
+  #gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'html2haml'
   gem 'quiet_assets'
