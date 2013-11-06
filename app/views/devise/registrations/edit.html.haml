@@ -11,7 +11,7 @@
   = f.button :submit, 'Update', :class => 'btn-primary'
  
   = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :delete, :class => 'form-vertical' }) do |f|
-    = f.button :submit, 'Delete', :class => 'btn-danger' , :data => { :confirm => 'Are you sure?' }
+    = f.button :submit, 'Delete My account', :class => 'btn-danger' , :data => { :confirm => 'Do you realy want to do this?' }
 
 %h3 Cancel my account
 %p
