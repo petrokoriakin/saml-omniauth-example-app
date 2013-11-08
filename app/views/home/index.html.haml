@@ -1,4 +1,22 @@
 %h3 Home
-- @users.each do |user|
-  %p
-    User: #{link_to user.name, user}
+ 
+%table
+  %tr
+    %th 
+      = sortable "name", 'User'
+    %th 
+      = sortable "email", 'Email'
+    %th
+      = sortable "provider", 'Dentity Provider'
+    %th 
+      = sortable "last_sign_in_at", 'Last sign in date'
+  - @users.each do |user|
+    %tr
+      %td
+        #{link_to user.name, user}
+      %td
+        #{user.email}
+      %td
+        #{user.provider}
+      %td
+        #{user.last_sign_in_at}

@@ -3,3 +3,7 @@
   User: #{@user.name}
 %p
   Email: #{@user.email if @user.email}
+%p
+  Identity Provider: #{@user.provider}
+%p
+  Last sign in date: #{@user.last_sign_in_at}
