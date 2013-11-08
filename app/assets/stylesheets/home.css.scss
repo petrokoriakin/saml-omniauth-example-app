@@ -5,13 +5,18 @@
 table {
   background: #FFF0F5;
   border: 2px #000000 solid;
+    }
 
-  }
 th {
   background: #D3D3D3;
   border: 2px #000000 solid;
   padding: 15px 50px;
-  }
+}
+
+th:hover {
+  background: #F0FFF0; 
+       } 
+
 td {
   border: 1px #000000 solid;
   padding: 10px 4px;
